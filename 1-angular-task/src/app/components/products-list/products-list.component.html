@@ -1,0 +1,9 @@
+<ul *ngIf="products?.length">
+  <li *ngFor="let product of products">
+    <app-products-list-item [product]="product"></app-products-list-item>
+  </li>
+</ul>
+
+<h1 *ngIf="!products?.length">
+  No products found
+</h1>
